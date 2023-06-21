@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+        *{
+            clear: both;
+        }
+        form{
+            margin: 50px auto;
+            width: 32%;
+            border: 5px solid black;
+            overflow-y: scroll;
+        }
+        input,select{
+            float: right;
+            margin-right: 50px;
+        }
+        h1,h3{
+            text-align: center;
+        }
+        #myFile{
+            float: none;
+            margin-left: 40px;
+            margin-right: 5px;
+        }
+        #gender1{
+            float: none;
+            margin-right: 0px;
+        }
+        #gender2{
+            float: none;
+            margin-right: 0px;
+          
+        }
+        #gender3{
+            float: none;
+            margin-right: 0px;
+            /* margin-left: 20px; */
+        }
+        #dep{
+            float: none;
+            margin-left: 65px;
+            
+        }
+        #Level{
+            float:none;
+            margin-left: 109px;
+        }
+        .field-container{
+            margin-left: 20px;
+        }
+        form{
+            background-color: aqua;
+        }
+        .input-field{
+            border-radius: 5px;
+        }
+        .img-container{
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+        .in{
+            position: absolute;
+            top: 0px;
+            left: 113px;
+        }
+        textarea{
+            height: 100px;
+            width: 100px;
+            margin-left: 50px;
+        }
+        
+    </style>
+  </head>
+  <body>
+    <div class="out">
+      <form >
+        <h1 >XYZ College/School</h1>
+        <h3 >Student Registration Form</h3>
+        <div class="field-container img-container" >
+            <label for="Student Image" id="label1"> Student Image : </label>
+                <textarea style="border-radius:5px"></textarea>
+                <input class="in" type="button" id="myFile" name="filename" value="Browse.."/>
+                <label style="margin-left: 5px">(less than 5 Mb) </label>
+            
+
+        </div>
+        <br />
+        <div class="field-container"> 
+            <label for="Student Name"> Student Name : </label>
+            <input type="text" placeholder="Full name" id="Student Name" class="input-field" size="25px"/>
+        </div>
+        <br />
+        <div class="field-container">
+            <label for="Father Name"> Father's Name : </label>
+            <input type="text" placeholder="Father name" id="Father Name" class="input-field" size="25px"/>
+        </div>
+        <br />
+        <div class="field-container">
+            <label for="Mother Name"> Mother's Name : </label>
+            <input type="text" placeholder="Mother name" id="Mother Name" class="input-field" size="25px" />
+        </div>
+        <br />
+
+        <div class="field-container">
+        <label for="gender" id="label2"> Gender : </label>
+            <label style="margin-left: 90px">Male</label><input type="radio" name="radio" value="male" id="gender1" />
+            <label style="margin-left: 10px">Female</label><input type="radio" name="radio" value="female" id="gender2" />
+            <label style="margin-left: 10px">Other</label><input type="radio" name="radio" value="other" id="gender3" />
+        </div>
+        <br />
+        <div class="field-container">
+            <label for="dob"> Date of Birth : </label>
+            <input  style="width:207px" type="date" placeholder="dd/mm/yyyy" id="dob" class="input-field" size="50px"/>
+        </div>
+        <br />
+        <div class="field-container">
+            <label for="email"> Email : </label>
+            <input type="text" placeholder="your email" id="email" class="input-field" size="25px"/>
+        <div>
+        <br />
+        <div>
+            <label for="Level"> Level : </label>
+            <select name="dev" id="Level">
+            <option>HighSchool</option>
+            <option>Intermediate</option>
+            <option>Graduation</option>
+            </select>
+        </div>
+        <br />
+        <div>
+            <label for="dep"> Department : </label>
+            <select name="dep" id="dep">
+            <option>Mechanical Engineering</option>
+            <option>Chemical Engineering</option>
+            <option selected>Electrical Engineering </option>
+            </select>
+        </div>
+        <br />
+        <div style="margin-bottom: 20px" >
+            <label for="Te"> Tel/Phone : </label>
+            <input  style="width:207px" type="number" placeholder="xxx xxx xxxx" id="Te" class="input-field" />
+        </div>
+        
+      </form>
+    </div>
+  </body>
+</html>
